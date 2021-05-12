@@ -30,6 +30,28 @@ Topics to be covered:
   - Debugging and identifying common errors, such as forgetting dependencies, incorrect syntaxes, or logic errors
 
 ## 6. Image Processing with Python Libraries (May 14, 2021) ##
-  - Add border to an image
-  - Crop a specific region of an image
-  - Rotate an image
+  <table>
+  <tr>
+  <th> Original </th> <th> Bordered </th>
+  </tr>
+  <td> <img src="./2021_05_14_ImageProcessing/images/lena.png"> </td>
+  <td> <b> Coming Soon </b> </td>  
+  
+  <tr>
+  <th> Rotated </th> <th> Mirrored </th>
+  </tr>
+  
+  <tr>
+  <td> <img src="./2021_05_14_ImageProcessing/results/lena_rotated.png"> </td>
+  <td> <img src="./2021_05_14_ImageProcessing/results/lena_mirrored.png"> </td>
+  </tr>
+
+  <tr>
+  <th> Cropped </th> <th> Shrunk </th>
+  </tr>
+  
+  <tr>
+  <td> <img src="./2021_05_14_ImageProcessing/results/lena_cropped.png"> </td>
+  <td> <img src="./2021_05_14_ImageProcessing/results/lena_shrunk.png"> </td>
+  </tr> 
+  </table>
