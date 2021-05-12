@@ -28,3 +28,8 @@ Topics to be covered:
   - Calculating factorial
   - Solving fizz-buzz problem
   - Debugging and identifying common errors, such as forgetting dependencies, incorrect syntaxes, or logic errors
+
+## 6. Image Processing with Python Libraries (May 14, 2021) ##
+  - Add border to an image
+  - Crop a specific region of an image
+  - Rotate an image
