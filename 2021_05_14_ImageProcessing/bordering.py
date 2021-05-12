@@ -24,8 +24,6 @@ def main():
 
 
     # 3. Save the image
-    new_image = cv2.addWeighted(original_img, 1, new_image, 1, 0)
-    cv2.imwrite("modified_image.jpg", new_image)
 
 if __name__ == "__main__":
     main()
