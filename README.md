@@ -55,3 +55,15 @@ Topics to be covered:
   <td> <img src="./2021_05_14_ImageProcessing/results/lena_shrunk.png"> </td>
   </tr> 
   </table>
+
+## 7. Data Science with Python Libraries (May 21, 2021) ##
+  <table>
+  <tr>
+  <th> Statistical Analysis </th> <th> Machine Learning Analysis </th>
+  </tr>
+  <tr>
+  <td> <img src="./2021_05_21_DataScience/assets/covid_statistics.png"> </td>
+  <td> <img src="./2021_05_21_DataScience/assets/covid_machine_learning.png"> </td>
+  </tr>
+  </table>
+  
