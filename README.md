@@ -66,4 +66,11 @@ Topics to be covered:
   <td> <img src="./2021_05_21_DataScience/assets/covid_machine_learning.png"> </td>
   </tr>
   </table>
+ The final session of Code in Place will cover the following topics 
+ - How to handle files and retrieve data inside 
+ - How to process the retrieved raw data into meaningful pieces of information
+ - How to display those pieces of information to discernable patterns
+ - One more thing: how to perform mathematical analysis to deduce trend from the existing data
   
+## 8. Real World Application of using Python Containers (May 22, 2021) ##
+Python provides several useful containers that can store, retrieve, and even modify any data inside. The example below demonstrates on how Python decipher image data from digital imaging and communication (DICOM) data format to slices of images
