@@ -102,8 +102,8 @@ def loadCSV(file, x_col=0, y_col=1):
     rows = len(result) #including header
     cols = len(result[0])
 
-    x = np.ndarray(rows, np.float64)
-    y = np.ndarray(rows, np.float64)
+    x = np.ndarray(rows, np.float32) # Float single precision only
+    y = np.ndarray(rows, np.float32) # Float single precision only 
 
     for i in range(rows):
         if (i != 0): # Skip the header part
@@ -122,8 +122,8 @@ def loadCSV(file, x_col=0, y_col=1):
 
 def loadPANDAS(file, x_col=0, y_col=1):
     dataset = pd.read_csv(file)
-    x = (dataset.iloc[:,:-1].values).astype('float32')
-    y = (dataset.iloc[:, -1].values).astype('float32')
+    x = (dataset.iloc[:,:-1].values).astype('float32') # Float single precision
+    y = (dataset.iloc[:, -1].values).astype('float32') # Float single precision
     y = np.reshape(y, (len(y),1))
     
     for i in range ( x.shape[0] ):
@@ -150,12 +150,25 @@ def loadDAT(file, x_col=0, y_col=1):
     y = np.reshape(y, (len(y), 1))
     return x, y
 
-def loadJSON(file, x_col=0, y_col=1):
-    dataset = pd.read_json(file)
-    x = (dataset.iloc[:,:-1].values).astype('float32')
-    y = (dataset.iloc[:, -1].values).astype('float32')
-    # x = np.reshape(x, (len(x), 1))
-    # y = np.reshape(y, (len(y), 1))
+def loadJSON(file, uniqueKey):
+    """
+    Input:
+    file: The JSON file that will be loaded, must end with .json extension
+    uniqueKey: A list that contains exactly two strings that correctly match the 
+    key value inside the JSON file
+    """
+    with open(file) as fileData:
+        parsedData = json.load(fileData)
+        # Retrieve independent variable x
+        xValues = parsedData[0]
+        xArrays = xValues[uniqueKey[0]]
+        x = np.zeros( len(xArrays)-1 )
+        x = xArrays
+        # Retrieve dependent variable y
+        yValues = parsedData[1]
+        yArrays = yValues[uniqueKey[1]]
+        y = np.zeros( len(yArrays)-1 )
+        y = yArrays
     return x, y
 
 class LoadDIM(ABC):
