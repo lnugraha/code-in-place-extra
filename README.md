@@ -5,6 +5,22 @@ Extra suplemental materials dedicated to Code in Place Spring 2021 with Stanford
 Topics to be covered:
 ## 1. Functions (April 23, 2021) ##
   - Visit folder 2021\_04\_23_Functions (main.py file)
+  - Be able to declare, implement, and call functions
+  - ```python
+    def sample_function(input_1, input_2):
+      # Begin by declaring def, brackets, and colon sign (:)
+      output_1 = input_1 + input_2
+      output_2 = input_1 * input_2
+      
+      # The correct word is return, NOT result
+      return output_1, output_2
+    
+    def main():
+      x, y = sample_function(3, 7)
+      
+    if __name__ == "__main__":
+      main()
+    ```
 
 ## 2. Iterations and Conditionals (April 25, 2021) ##
   - For-Loop
