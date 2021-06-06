@@ -46,9 +46,11 @@ Topics to be covered:
   - Using external third-party dependencies
 
 ## 5. Problem Solving with Python (May 07, 2021) ##
-  - Running total
-  - Calculating factorial
+  - Running total (using endless while-loop or using sentient-value while-loop)
+  - Calculating factorial (using for-loop or using recursion call)
   - Solving fizz-buzz problem
+  - Non-decreasing input numbers
+  - Playing palindrome
   - Debugging and identifying common errors, such as forgetting dependencies, incorrect syntaxes, or logic errors
 
 ## 6. Image Processing with Python Libraries (May 14, 2021) ##
