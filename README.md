@@ -30,8 +30,14 @@ Topics to be covered:
 
 ## 3. Accessing Main Functions (April 30, 2021) ##
   - Reference: https://youtu.be/sugvnHA7ElY 
-  - def main():
-  - if \_\_name\_\_ == "\_\_main\_\_":
+  - ```python
+    def main():
+      pass
+    ```
+  - ```python
+    if __name__ == "__main__":
+      pass
+    ```
   - Using none of the above
 
 ## 4. Handling Library Dependencies (April 30, 2021) ##
