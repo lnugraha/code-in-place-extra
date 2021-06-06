@@ -7,7 +7,11 @@ Topics to be covered:
   - Visit folder 2021\_04\_23_Functions (main.py file)
   - Be able to declare, implement, and call functions
   - ```python
-    def sample_function(input_1, input_2):
+    def single_function(input_1, input_2, input_3):
+      output = input_1 * input_2 * input_3
+      return output
+    
+    def multi_function(input_1, input_2):
       # Begin by declaring def, brackets, and colon sign (:)
       output_1 = input_1 + input_2
       output_2 = input_1 * input_2
@@ -22,11 +26,36 @@ Topics to be covered:
       main()
     ```
 
-## 2. Iterations and Conditionals (April 25, 2021) ##
+## 2. Iterations, Conditionals, Increments or Decrements (April 25, 2021) ##
   - For-Loop
+    ```python
+    for i in range(0,10,2):
+      print(i)
+    ```
   - While-Loop
+    ```python
+    i = 0
+    while i < 
+      print(i)
+      i = i+1
+    ```
   - If-Else
+    ```python
+    if i < 0:
+      print(f"The number {i} is a negative number")
+    else:
+      print(f"The number {i} is a positive number")
+    ```
   - If-Elif
+    ```python
+    if i < 0:
+      print(f"The number {i} is a negative number")
+    elif i == 0:
+      print(f"The number {i} is exactly zero")
+    else:
+      print(f"The number {i} is a positive number")
+    ```
+  - Increment or decrement
 
 ## 3. Accessing Main Functions (April 30, 2021) ##
   - Reference: https://youtu.be/sugvnHA7ElY 
