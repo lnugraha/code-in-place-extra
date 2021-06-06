@@ -56,6 +56,15 @@ Topics to be covered:
       print(f"The number {i} is a positive number")
     ```
   - Increment or decrement
+    ```python
+    i = 1
+    # Method 1 (Intuitive Mode)
+    i = i + 1
+    # Method 2 (Compact Mode)
+    i += 1
+    # Method 3 (PRO Mode)
+    i -= -1
+    ```
 
 ## 3. Accessing Main Functions (April 30, 2021) ##
   - Reference: https://youtu.be/sugvnHA7ElY 
@@ -70,6 +79,10 @@ Topics to be covered:
   - Using none of the above
 
 ## 4. Handling Library Dependencies (April 30, 2021) ##
+  - ```python
+    import math, os, sys # concatenate all libraries
+    from math import random # only import a specific function
+    ```
   - Using Python built-in libraries
   - Using different Python files
   - Using external third-party dependencies
@@ -118,7 +131,12 @@ Topics to be covered:
   <td> <img src="./2021_05_21_DataScience/assets/covid_statistics.png"> </td>
   <td> <img src="./2021_05_21_DataScience/assets/covid_machine_learning.png"> </td>
   </tr>
+  <tr>
+  <td> </td>
+  <td> </td>
+  </tr>
   </table>
+  
  The final session of Code in Place will cover the following topics 
  - How to handle files and retrieve data inside 
  - How to process the retrieved raw data into meaningful pieces of information
