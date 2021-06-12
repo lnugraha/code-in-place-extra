@@ -34,8 +34,8 @@ Topics to be covered:
     ```
   - While-Loop
     ```python
-    i = 0
-    while i < 
+    i = 0; maxLimit = 10
+    while i < maxLimit
       print(i)
       i = i+1
     ```
