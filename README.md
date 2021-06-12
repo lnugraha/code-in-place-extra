@@ -100,9 +100,9 @@ Topics to be covered:
 - [ ] Converting 2D matrix to 1D vector:
 
 ```python
-  for i in range rows:
-    for j in range cols:
-      idx = j + i * rows
+for i in range rows:
+  for j in range cols:
+    idx = j + i * rows
 ```
 - [ ] Converting 1D vector to 2D matrix:
 ```python
