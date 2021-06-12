@@ -96,6 +96,19 @@ Topics to be covered:
   - Debugging and identifying common errors, such as forgetting dependencies, incorrect syntaxes, or logic errors
 
 ## 6. Image Processing with Python Libraries (May 14, 2021) ##
+
+- [ ] Converting 2D matrix to 1D vector:
+
+```python
+  for i in range rows:
+    for j in range cols:
+      idx = j + i * rows
+```
+- [ ] Converting 1D vector to 2D matrix:
+```python
+x = idx % cols
+y = floor((idx-x) / cols)
+```
   <table>
   <tr>
   <th> Original </th> <th> Bordered </th>
