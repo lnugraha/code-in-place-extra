@@ -23,7 +23,32 @@ def main():
 
 ```python
 def main():
-  pass
+  earthWeight = float(input("Enter the object weight: "))
+  planetName = input("Enter a planet name: ")
+  
+  if (planetName == "Mercury"):
+    planetWeight = float(earthWeight) * (37.6 / 100)
+        
+  elif (planetName == "Venus"):
+    planetWeight = float(earthWeight) * (88.9 / 100)
+        
+  elif (planetName == "Mars"):
+    planetWeight = float(earthWeight) * (37.8 / 100)    
+
+  elif (planetName == "Jupiter"):
+    planetWeight = float(earthWeight) * (236 / 100)
+        
+  elif (planetName == "Saturn"):
+    planetWeight = float(earthWeight) * (108.1 / 100)
+
+  elif (planetName == "Uranus"):
+    planetWeight = float(earthWeight) * (81.5 / 100)
+        
+  elif (planetName == "Neptune"):
+    planetWeight = float(earthWeight) * (114 / 100)    
+    
+  else:
+    planetWeight = 0
 ```
 </details>
 
@@ -32,7 +57,33 @@ def main():
 
 ```python
 def main():
-  pass
+  earthWeight = float(input("Enter the object weight: "))
+  planetName = input("Enter a planet name: ")
+  
+  match planetName:
+    case "Mercury":
+      planetWeight = float(earthWeight) * (37.6 / 100)
+  
+    case "Venus":
+      planetWeight = float(earthWeight) * (88.9 / 100)
+  
+    case "Mars":
+      planetWeight = float(earthWeight) * (37.8 / 100)
+  
+    case "Jupiter":
+      planetWeight = float(earthWeight) * (236 / 100)
+      
+    case "Saturn":
+      planetWeight = float(earthWeight) * (108.1 / 100)
+  
+    case "Uranus":
+      planetWeight = float(earthWeight) * (81.5 / 100)
+  
+    case "Neptune":
+      planetWeight = float(earthWeight) * (114 / 100)
+  
+    case other:
+      planetWeight = 0.0
 ```
 </details>
 
@@ -42,8 +93,7 @@ def main():
 - Concatenate multiple strings with + (plus) or , (comma)
 - All concatenated items have to be converted to the same data type (string)
 ```python
-planetName = "Mars"
-planetWeight = 175.26
+planetName = "Mars"; planetWeight = 175.26
 print("The weight on " + planetName + ": " + str(marsWeight))
 print("The weight on " , planetName + ": " , str(marsWeight))
 ```
@@ -53,8 +103,7 @@ print("The weight on " , planetName + ": " , str(marsWeight))
 - Unlike concatenation method, this method requires no string conversion
 - Use the {} (curly brackets) to place your variable
 ```python
-planetName = "Mars"
-planetWeight = 175.26
+planetName = "Mars"; planetWeight = 175.26
 print("The weight on {}: {}".format(planetName, planetWeight))
 ```
 <b> 3. F-word </b>
@@ -62,6 +111,7 @@ print("The weight on {}: {}".format(planetName, planetWeight))
 - Similar to method 2 (reference), but now variable name is placed inside the curly brackets 
 - Likewise, no variable casting (conversion) is needed
 ```python
+planetName = "Mars"; planetWeight = 175.26
 print(f"The weight on {planetName}: {planetWeight}")
 ```
 
