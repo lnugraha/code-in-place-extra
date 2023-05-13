@@ -16,6 +16,8 @@ def main():
 </details>  
 
 ## Console Programming (Week 3: May 12, 2023) ##
+
+### Conditional Branching ###
 <details>
 <summary> 1. <b>IF-ELIF-ELSE</b> Statement </summary>
 
@@ -34,6 +36,34 @@ def main():
 ```
 </details>
 
+### Printing in Python ###
+<b> 1. String Concatenation </b>
+- Notice that both "+" and "," can be used interchangably
+- Concatenate multiple strings with + (plus) or , (comma)
+- All concatenated items have to be converted to the same data type (string)
+```python
+planetName = "Mars"
+planetWeight = 175.26
+print("The weight on " + planetName + ": " + str(marsWeight))
+print("The weight on " , planetName + ": " , str(marsWeight))
+```
+
+<b> 2. Reference </b>
+- Notice the ```.format(,)``` patten
+- Unlike concatenation method, this method requires no string conversion
+- Use the {} (curly brackets) to place your variable
+```python
+planetName = "Mars"
+planetWeight = 175.26
+print("The weight on {}: {}".format(planetName, planetWeight))
+```
+<b> 3. F-word </b>
+- Notice the f letter inside print()
+- Similar to method 2 (reference), but now variable name is placed inside the curly brackets 
+- Likewise, no variable casting (conversion) is needed
+```python
+print(f"The weight on {planetName}: {planetWeight}")
+```
 
 ## Functions with Parameters (Week 4: May 19, 2023) ##
 <details>
