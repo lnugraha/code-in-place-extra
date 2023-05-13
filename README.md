@@ -115,7 +115,9 @@ planetName = "Mars"; planetWeight = 175.26
 print(f"The weight on {planetName}: {planetWeight}")
 ```
 
-## Functions with Parameters (Week 4: May 19, 2023) ##
+## Graphics (Week 4: May 19, 2023) ##
+
+### Functions with Parameters ###
 <details>
 <summary> 1. <b>Single</b> Output Return </summary>
 
@@ -140,7 +142,7 @@ def multi_output_function(input_1, input_2):
 ```
 </details>
 
-## Graphics and Image Processing (Week 5: May 26, 2023) ##
+## Animation (Week 5: May 26, 2023) ##
 
   - Coming Soon
 
