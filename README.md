@@ -1,10 +1,10 @@
-# Code in Place Spring 2024 - Stanford University
+# Code in Place Spring 2025 - Stanford University
 
-Extra suplemental materials dedicated to Code in Place Spring 2024 with Stanford University
+Extra suplemental materials dedicated to Code in Place Spring 2025 with Stanford University
 
 Topics to be covered:
 
-## Input Arguments (Week 2: May 03, 2024) ##
+## Input Arguments (Week 2: May 02, 2025) ##
 <details>
 <summary> User Input Prompt: remember all data types are still in string </summary>
 
@@ -15,7 +15,7 @@ def main():
 ```
 </details>  
 
-## Console Programming (Week 3: May 10, 2024) ##
+## Console Programming (Week 3: May 09, 2025) ##
 
 ### Conditional Branching ###
 <details>
@@ -185,7 +185,7 @@ print(f"The weight on {planetName}: {planetWeight}")
 ```
 </details>
 
-## Control Flow (Week 4: May 17, 2024) ##
+## Control Flow (Week 4: May 16, 2025) ##
 
 ### Writing Functions ###
 <b> 1. Returning a Single Output </b>
@@ -228,9 +228,9 @@ def main():
 ```
 </details>
 
-## Canvas, Graphics, and Animation (Week 5: May 24, 2024) ##
+## Canvas, Graphics, and Animation (Week 5: May 23, 2025) ##
 
-## Data Structures (Week 6: May 31, 2024) ##
+## Data Structures (Week 6: May 30, 2025) ##
 Visit: [2024_05_31_DataStructures](https://github.com/lnugraha/code-in-place-extra/tree/2024-edition/2024_05_31_DataStructures)
 
 <b> 1. Calculating Factorial </b>
