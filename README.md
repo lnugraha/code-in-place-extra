@@ -8,7 +8,7 @@ None
 
 ## Input Arguments (Week 2: May 02, 2025) ##
 <details>
-<summary> User Input Prompt: remember all data types are still in string </summary>
+<summary> 1. User Input Prompt: remember all data types are still in string </summary>
 
 ```python
 def main():
@@ -16,6 +16,36 @@ def main():
   print("Good morning " + user_name)
 ```
 </details>  
+
+<details>
+<summary> 2. Using <b>Google's Gemini AI</b> </summary>
+
+```python
+from google import genai
+from google.genai import types
+
+########################################################
+# Store your API KEY in a text file (gemini_keys.txt)  #
+# Do not expose or reveal it                           #
+########################################################
+
+def main():
+  user_question = input("Enter your question here: ")
+
+  with open('gemini_keys.txt', 'r') as file:
+    content = file.read()
+    GEMINI_API_KEY = content.replace('\n', '')
+
+  client = genai.Client(api_key=GEMINI_API_KEY)
+  response = client.models.generate_content(
+      model='gemini-2.0-flash-001', 
+      contents=user_question
+  )
+
+  print(f"Response from Gemini: {response.text}")
+```
+</details>  
+
 
 ## Console Programming (Week 3: May 09, 2025) ##
 
