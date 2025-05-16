@@ -3,6 +3,8 @@
 Extra suplemental materials dedicated to Code in Place Spring 2025 with Stanford University
 
 Topics to be covered:
+## Karel Programming (Week 1: April 25, 2025) ##
+None
 
 ## Input Arguments (Week 2: May 02, 2025) ##
 <details>
