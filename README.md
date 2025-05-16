@@ -283,9 +283,20 @@ def factorial_dynamic_programming(n):
 - List of dictionary vs Dictionary
 
 <details>
-<summary> Using <b>Conditionals</b> (planet_conditional.py) </summary>
+<summary> Using <b>Enumeration</b> and <b>match-case</b> for (planet_conditional.py) </summary>
 
 ```python
+from enum import Enum
+
+class Planet(Enum):
+  Mercury = "Mercury"
+  Venus = "Venus"
+  Mars = "Mars"
+  Jupiter = "Jupiter"
+  Saturn = "Saturn"
+  Uranus = "Uranus"
+  Neptune = "Neptune"
+
 MERCURY_GRAVITY = (37.6 / 100)
 VENUS_GRAVITY = (88.9 / 100)
 MARS_GRAVITY = (37.8 / 100)
@@ -297,32 +308,29 @@ NEPTUNE_GRAVITY = (114 / 100)
 def calculate_weight(planetName, earthWeight):
   
   match planetName:
-    case "Mercury":
+    case Planet.Mercury.value:
         planetWeight = earthWeight * MERCURY_GRAVITY
   
-    case "Venus":
+    case Planet.Venus.value:
         planetWeight = earthWeight * VENUS_GRAVITY
   
-    case "Mars":
+    case Planet.Mars.value:
         planetWeight = earthWeight * MARS_GRAVITY
   
-    case "Jupiter":
+    case Planet.Jupiter.value:
         planetWeight = earthWeight * JUPITER_GRAVITY
       
-    case "Saturn":
+    case Planet.Saturn.value:
         planetWeight = earthWeight * SATURN_GRAVITY
   
-    case "Uranus":
+    case Planet.Uranus.value:
         planetWeight = earthWeight * URANUS_GRAVITY
   
-    case "Neptune":
+    case Planet.Neptune.value:
         planetWeight = earthWeight * NEPTUNE_GRAVITY
-  
-    case "Earth":
-        planetWeight = earthWeight
 
-    case other:
-        planetWeight = -1.0 # Why put a negative value here?
+    case _:
+        planetWeight = -1.0 
 
 return planetWeight
   
@@ -332,49 +340,6 @@ def main():
   planetWeight = calculate_weight(planetName, earthWeight)
   
   print("The name of the planet: " + planetName + " with weight: " + str(planetWeight))
-
-```
-
-</details>
-
-<details>
-  
-<summary> Using <b>List of Dictionary</b> (planet_dictionary.py) </summary>
-  
-```python
-planet_dict = [
-  {"mercury": 0.376}, 
-  {"venus": 0.889},
-  {"earth": 1.0},  
-  {"mars": 0.378},
-  {"jupiter": 2.36}, 
-  {"saturn": 1.081}, 
-  {"uranus": 0.815}, 
-  {"neptune": 1.14}
-]
-
-def calculate_weight(target_planet, earth_weight):
-    # TODO: Check the earth weight, make sure >= 0 and numbers only
-    # TODO: Check that the target planet name is listed in the dictionary, otherwise return an error
-
-    planet_name = target_planet.lower()
-    planet_constant = -1.0
-    for i in range( len(planet_dict) ):
-        for name, gravity in planet_dict[i].items():
-            if (planet_name == name):
-                planet_constant = gravity
-
-    planet_weight = planet_constant * earth_weight
-
-    return planet_weight
-
-def main():
-  earth_weight = float(input("Enter the object weight: "))
-  planet_name = input("Enter a planet name: ")
-  
-  planet_weight = calculate_weight(planet_name, earth_weight)
-
-  print("The name of the planet: " + planet_name + " with weight: " + str(planet_weight))
 
 ```
 
