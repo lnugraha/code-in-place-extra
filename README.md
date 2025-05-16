@@ -194,14 +194,14 @@ print(f"The weight on {planetName}: {planetWeight}")
 <summary> Example: </summary>
   
 ```python
-def calculate_mars_weight(earth_weight):
-  MARS_GRAVITY = 0.376
-  mars_weight = float(earth_weight) * MARS_GRAVITY
-  return round(mars_weight, 2)
+import random
+
+def get_random_number():
+  return random.randint(1, 100)
   
 def main():
-  earth_test = float(input("Enter the object weight on Earth: "))
-  mars_test = calculate_mars_weight(earth_test)
+  user_number = get_random_number()
+  print(f"What is user random number? {user_number}")
 ```
 </details>
 
@@ -211,20 +211,20 @@ def main():
 <summary> Example: </summary>
   
 ```python
-def calculate_planet_weights(earth_weight):
-  MERCURY_GRAVITY = 0.376
-  VENUS_GRAVITY = 0.889
-  MARS_GRAVITY = 0.378
+import random
 
-  mercury_weight = earth_weight * MERCURY_GRAVITY
-  venus_weight = earth_weight * VENUS_GRAVITY
-  mars_weight = earth_weight * MARS_GRAVITY
+def get_two_different_random_numbers():
+  user = 0; comp = 0;
+  while (user == comp):
+    user = random.randint(1, 100)
+    comp = random.randint(1, 100)
 
-  return round(mercury_weight, 2), round(venus_weight, 2), round(mars_weight, 2)
+    if (user != comp):
+      return user, comp
   
 def main():
-  earth_test = float(input("Enter the object weight on Earth: "))
-  mercury_test, venus_test, mars_test = calculate_planet_weights(earth_test)
+  user_number, comp_number = get_two_different_random_numbers()
+  print(f"What is user number: {user_number}. What is computer number: {comp_number}")
 ```
 </details>
 
