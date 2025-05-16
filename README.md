@@ -228,7 +228,50 @@ def main():
 ```
 </details>
 
+<b> 3. Accepting Input(s) and Returning Output(s) </b>
+
+<details>
+<summary> Example: </summary>
+  
+```python
+import random
+
+def get_two_different_random_numbers():
+  user = 0; comp = 0;
+  while (user == comp):
+    user = random.randint(1, 100)
+    comp = random.randint(1, 100)
+
+    if (user != comp):
+      return user, comp
+
+def is_user_guess_correct(user_number, comp_number, user_guess):
+  if (user_number > comp_number and user_guess == "high"):
+    return True
+
+  elif (user_number < comp_number and user_guess == "low"):
+    return True
+
+  else:
+    return False
+
+
+def main():
+  user_number, comp_number = get_two_different_random_numbers()
+  print(f"User number is {user_number}")
+
+  user_guess = input("Do you think user number is higher or lower (high / low)?")
+  is_user_win = is_user_guess_correct(user_number, comp_number, user_guess)
+
+  if (is_user_win == True):
+    print("You guessed correctly")
+  else:
+    print("Sorry! Your guess is wrong")
+```
+</details>
+
 ## Canvas, Graphics, and Animation (Week 5: May 23, 2025) ##
+None
 
 ## Data Structures (Week 6: May 30, 2025) ##
 Visit: [2024_05_31_DataStructures](https://github.com/lnugraha/code-in-place-extra/tree/2024-edition/2024_05_31_DataStructures)
